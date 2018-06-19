@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Reference App</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <meta property="dyapi:jwt" content="{{dyJwt}}">
+    <meta property="dyapi:userid" content="{{dyUserId}}">
+    <meta property="dyapi:sessionid" content="{{dySessionId}}">
+  </head>
+
+  <body>
+    <nav class="nav-app">
+      <div class="container">
+        <img src="/img/DY_Logo_White.png">
+        <a href="https://www.dynamicyield.com/">
+          Back to
+          <strong>Dynamic Yield</strong>
+          <span style="color:#007bff">&#8594;</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4" data-dyapi-decision-id="{{homepageBanner.decisionId}}" data-dyapi-variation-id="{{homepageBanner.variations.0.id}}">
+        <h1 class="display-3">{{homepageBanner.variations.0.payload.data.header}}</h1>
+        <p class="lead">{{homepageBanner.variations.0.payload.data.subtitle}}</p>
+        <input class="btn-app-info btn-app" type="button" value="MORE INFO">
+      </header>
+
+      <div class="row text-center" data-dyapi-decision-id="{{homepageRecs.decisionId}}">
+        {{#each homepageRecs.slots}}
+        <div class="col-lg-3 col-md-6 mb-4" data-sku="{{sku}}" data-price="{{productData.price}}" data-dyapi-slot-id="{{slotId}}">
+          <div class="card">
+            <a href="javascript:void(0);" class="item">
+              <img class="card-img-top" src="{{productData.image_url}}" alt="">
+              <div class="card-body">
+                <h4 class="card-title">{{productData.name}}</h4>
+                <p class="card-text">${{productData.price}}</p>
+              </div>
+            </a>
+            <a href="javascript:void(0);" class="btn-app">Add to cart</a>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+            crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

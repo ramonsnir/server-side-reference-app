@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Klavika;
+  src: url('Klavika.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.nav-app {
+  background-color: #09173a;
+  padding: 20px 15%;
+  color: white;
+}
+
+.nav-app div > img {
+  width: 15%;
+}
+
+h1 {
+  font-family: Klavika;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.jumbotron {
+  border-radius: 0;
+  background-image: url('/img/Reference_App_Design_Header.jpg');
+  color: white;
+  font-family: 'Open sans';
+}
+
+.btn-app {
+  background-color: #1894e8;
+  color: white;
+  margin: 2px;
+  padding: 12px 17px;
+  border: 0;
+  width: 55%;
+  text-align: center;
+}
+
+.btn-app.added-to-cart {
+  background-color: #18e86b;
+}
+
+.btn-app-info {
+  padding: 8px 40px;
+  width: 17% !important;
+  cursor: pointer;
+}
+
+.card {
+  border: 0;
+  font-family: 'Open Sans';
+  text-align: left;
+}
+
+.card img {
+  border: 1.5px solid;
+  border-color: #dcdcdc;
+}
+
+.card-body {
+  padding-left: 0;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.card-title {
+  height: 4em;
+}
+
+.container {
+  padding-right: 0;
+}
+
+.nav-app a {
+  float: right;
+  color: white;
+}

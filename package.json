@@ -1,0 +1,36 @@
+{
+  "name": "reference",
+  "version": "1.0.0",
+  "description": "",
+  "main": "postest.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DynamicYield/server-side-reference-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DynamicYield/server-side-reference-app/issues"
+  },
+  "homepage": "https://github.com/DynamicYield/server-side-reference-app#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0"
+  }
+}

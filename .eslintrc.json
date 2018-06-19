@@ -1,0 +1,23 @@
+{
+  "extends": "airbnb-base",
+  "env" : {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "class-methods-use-this": "off",
+    "no-param-reassign": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "all",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "import/newline-after-import": false,
+    "import/no-dynamic-require": false,
+    "import/no-extraneous-dependencies": false
+  }
+}
