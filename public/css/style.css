@@ -49,9 +49,15 @@ h4 {
 }
 
 .btn-app-info {
-  padding: 8px 40px;
-  width: 17% !important;
+  padding: 10px 50px;
   cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+  width: initial;
+  text-transform: uppercase;
+}
+.btn-app-info:hover {
+    color: white;
 }
 
 .card {
