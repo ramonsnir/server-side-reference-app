@@ -1,4 +1,4 @@
-FROM node:carbon-alpine
+FROM node:lts-alpine
 LABEL maintainer "Dynamic Yield <support@dynamicyield.com>"
 WORKDIR /usr/src/app
 ENV NODE_ENV production

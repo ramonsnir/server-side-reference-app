@@ -1,8 +1,8 @@
 {
-  "name": "reference",
+  "name": "server-side-reference-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "postest.js",
+  "description": "Dynamic Yield Personalization API reference application",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
@@ -17,20 +17,20 @@
   },
   "homepage": "https://github.com/DynamicYield/server-side-reference-app#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "express-session": "^1.15.6",
     "hbs": "^4.0.1",
-    "request": "^2.87.0",
+    "request": "^2.88.0",
     "request-promise-native": "^1.0.5",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^17.0.0",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-jsx-a11y": "^6.1.0",
-    "eslint-plugin-react": "^7.10.0"
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.9"
   }
 }
