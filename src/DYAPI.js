@@ -33,15 +33,13 @@ async function choose(userId, sessionId, context, placements) {
 async function generateJwt(userId) {
   return request({
     url: 'https://dy-api.com/v2/generate-token',
-    qs: {
-      user_id: userId,
-    },
     method: 'POST',
     headers: {
       'DY-API-Key': process.env.DY_API_KEY || demoApiKey,
     },
     body: {
       source: 'client',
+      userId,
     },
     json: true,
   });
